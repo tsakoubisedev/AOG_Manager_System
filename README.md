@@ -108,6 +108,18 @@ Firebase Authentication, SQL Connect deployment, and first-organization setup
 are required. Follow [FIREBASE_SETUP.md](FIREBASE_SETUP.md) for the full setup
 instructions and deployment commands.
 
+## Try the demo
+
+To explore the app without signing in or connecting to Firebase, open
+[demo/index.html](demo/index.html) in a browser. It includes sample data and
+supports member search, team filters, member edits, and attendance recording.
+Demo changes are temporary and do not affect the live app. See
+[demo/README.md](demo/README.md) for details.
+
+The repository includes [netlify.toml](netlify.toml), configured to publish
+the `demo` directory as a static site. Connect this repository to Netlify to
+deploy the demo; no build command or Firebase configuration is required.
+
 The main database definition is in
 [dataconnect/schema/schema.gql](dataconnect/schema/schema.gql). SQL Connect
 queries and mutations are in [dataconnect/connector](dataconnect/connector).
